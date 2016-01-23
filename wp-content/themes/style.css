@@ -1,0 +1,430 @@
+/*
+Theme Name: Cliente
+Theme URI: http://h1sites.com.br
+Author: Jailson da silva
+Author URI: http://h1sites.com.br/sobre-nos
+Description: Thema desenvolvido especialmente para 'nome do cliente'
+Version: 4.0.2
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}
+.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}
+
+/*=== convertendo font para em ===*/
+*{font-size: 62.5%;}
+
+
+/*===coloca as margens pra dentro do elemento===*/
+
+boxsizing {box-sizing: border-box;}
+
+
+
+
+/*===woocommerce===*/
+#content > div > form > select{
+ max-width: 100%;   
+}
+
+.woocommerce-result-count{
+	display:none;	
+}
+
+.menu-mobile{
+display:none;
+    font-size: 2em;
+}
+
+
+.woo{
+    margin-bottom: 10%;
+    margin-top: 20%;
+    font-family: "proxima-nova-n4","proxima-nova","Proxima-nova",Helvetica,Arial,Geneva,sans-serif;
+    
+}
+.products li{
+ display: inline;
+    float: left;
+    margin-bottom: 10%;
+    margin-right: 3%;
+    width: 30%;
+    height: 300px;
+    text-align: center;
+}
+.add_to_cart_button{
+ background: #f4691c;
+    padding: 5px 15px ;
+    color: #fff;
+    border-radius: 4px;
+}
+.price{
+ display: block;   
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.woo .thumbnails img{
+ max-width: 70px;
+    height: auto;
+}
+.woo .thumbnails{
+ max-width: 300px;   
+}
+
+.woo h3{
+    line-height: 1.5em;
+    font-size: 1.2em;
+color: #000;   
+}
+.product a{
+     text-decoration: none;
+}
+
+.entry-summary{
+ max-width: 300px;   
+    display: inline-block;
+    padding: 2%;
+}
+
+
+.woo .images{
+width: 300px;  
+    display: inline;
+    float: left;
+    
+}
+
+
+#review_form_wrapper{
+ margin-left: 200px;   
+}
+#commentform > p.comment-form-comment label{
+display: block;
+}
+
+.product .product_title{
+ font-size: 1.7em;   
+    
+}
+.page-title{
+ color: darkblue;
+    margin-top: 2em;
+    border-bottom: solid 1px #069;
+    margin-right: 3%;
+}
+.woocommerce-ordering{
+ line-height: 5em;   
+}
+.section-woo{
+ width: 75%;   
+    float: left;
+}
+
+.boxwoo img{
+    margin-top: 20px;
+}
+.boxwoo #box-topo p{
+ float: left;
+    line-height: 140px;
+}
+.boxwoo #box-topo{
+ line-height: 150%;   
+}
+#woocommerce_widget_cart-2 > div > p.buttons > a:nth-child(1){
+ margin-bottom: 2px;   
+    margin-top: 2%;
+}
+
+/*=== paginacao woocommerce ===*/
+.page-numbers{
+ display: block;  
+text-decoration: none;
+ /*text-align: right;*/
+  margin-left: 2%;
+    
+}
+.woocommerce-pagination{
+    clear: both;
+    margin-bottom: ;
+    width: 100%;
+    display: inline-block;
+    
+}
+.woocommerce-pagination li{
+    display: inline-block;
+    margin-left: -5px;
+    background: #ccc;
+    padding: 8px;
+    font-family: "proxima-nova-n4","proxima-nova","Proxima-nova",Helvetica,Arial,Geneva,sans-serif;
+    font-weight: bold;
+}
+.woocommerce-pagination li:first-child {
+    /*border-top-left-radius: 6px;*/
+    border-bottom-left-radius: 10px;
+}
+.woocommerce-pagination li:last-child {
+    border-top-right-radius: 10px;
+    /*border-bottom-right-radius: 6px;*/
+}
+.woocommerce-pagination li a{
+    color: #777777;
+    
+}
+/*=== botao promocao ===*/
+.onsale{
+ display: block;   
+}
+
+
+
+/*=== sidebar lateral carrinho de compras ===*/
+
+.sidebar-lateral{
+    margin-top: 10%;
+    display:block;
+    float: right;
+    width: 25%;
+}
+.oveerflow{
+ overflow: hidden;   
+}
+
+.sidebar-lateral .widget-container{
+    width: 90%;
+    display: inline-block;
+    background: #ebe9eb;
+    padding: 3%;
+    border-radius: 5px;
+    margin-top: 2%;
+}
+.sidebar-lateral .buttons{
+    text-align: center;
+}
+.sidebar-lateral .button{
+ margin-bottom: 2px;   
+}
+.sidebar-lateral h3{
+ line-height: 1.8em;
+    font-family: "proxima-nova-n4","proxima-nova","Proxima-nova",Helvetica,Arial,Geneva,sans-serif;
+    font-weight: bold;
+    color: #069;
+    margin-bottom: 10%;
+    border-bottom: 2px solid #069;
+}
+#woocommerce_widget_cart-2 > div > div > p.total{
+ text-align: center;   
+}
+#woocommerce_widget_cart-2 > div > div > ul > li > a:nth-child(2){
+ color: #000;
+    text-decoration: none;
+}
+
+#woocommerce_widget_cart-2 > div > div > p.buttons{
+ margin-bottom: 5px;   
+}
+/*===pagina de produtos===*/
+.commentlist{
+    display: inline-block;
+}
+.reviews_tab{
+ float: left;
+    display: inline;
+}
+#reviews{
+ clear: both;   
+}
+.tabs li{
+ width: 40%;   
+    float: left;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    padding: 2% 5%;
+}
+.tabs .active{
+ background: #000; 
+
+}
+.tabs .entry-content{
+ display: inline-block;
+    color: #000;
+}
+.woocommerce-tabs{
+    clear:both;
+    padding: 0 5% 5% 0%;
+}
+#tab-description{
+display: inline-block;
+ border: 1px solid #069;    
+}
+#comments{
+ border: 1px solid #069;   
+}
+.related{
+ clear: both;   
+}
+
+
+
+
+
+
+
+
+/*=== menu- modelo ===*/
+
+ul, ol, li{
+	list-style:none;
+	margin:0;
+	padding:0;	
+}
+.sub-menu{
+	width: 150px;
+	display: none;
+	position: absolute;
+	left:0px
+	
+	
+	
+}
+.menu-item:hover > .sub-menu{
+	display:block;	
+}
+
+.sub-menu .menu-item{
+	
+	margin: 0px 0;
+}
+.sub-menu .menu-item .sub-menu{
+	
+	position: relative;
+}
+.sub-menu .menu-item:hover .sub-menu{
+	
+	
+	left: 110px;
+	position: absolute;
+	top: 0px;	
+}
+/*.sub-menu .menu-item .sub-menu:hover .sub-menu{
+	display:block;
+	}
+	.sub-menu .menu-item .sub-menu .sub-menu{
+	display:none;
+	}*/
+	
+.menu-item{
+	
+	position: relative;
+	display:inline-block;
+	padding: 0 15px;
+	background:#000000;
+	color:#FFFFFF;
+	font-weigth: bold;
+	font-size: 20px;
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	line-height: 34px;
+	
+	/*border-bottom: solid 3px #12FF00;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-top: solid 3px #12ff00;
+	border-top-left-radius: 10px;*/
+}
+
+
+
+/*===breakpoints===*/
+
+/*=== menor que 1144px ===*/
+@media (max-width: 1144px){
+    
+}
+
+
+/*=== menor que 1020px*/
+@media (max-width: 1020px){
+        }
+    /*breakpointwoocommerce*/
+    .products li{
+    width: 45%;
+    height: 350px;
+    }
+    .sidebar-lateral{
+     width: 30%;   
+    margin-top: 14%;
+    }
+    .section-woo{
+     width: 70%;   
+    }
+}
+
+
+
+/*==menor que  895px*/
+@media (max-width: 895px){
+    
+}
+
+
+
+/*===menor que 837px===*/
+@media (max-width: 837px) {
+        /*breakpointwoocommerce*/
+    .products li{
+    width: 45%;
+
+    }
+}
+
+
+
+/*===menor que 700px*/
+@media (max-width: 700px) {
+    
+}
+
+
+
+
+
+/*===menor que 600===*/
+@media (max-width: 600px) {
+
+/*breakpointswoocommerce*/
+        .products li{
+    width: 100%;
+    margin-bottom: 15%;
+    }
+    .sidebar-lateral{
+     width: 30%;   
+    margin-top: 14%;
+    }
+    .section-woo{
+     width: 100%;   
+    }
+}
+
+
+/*===menor que 470===*/
+@media (max-width: 470px) {
+    
+}
+
+
+
+/*===menor que 360===*/
+@media (max-width: 360px) {
+    
+}
+
+
+
+/*===menor que 274px===*/
+@media (max-width: 274px) {
+    
+}
+
+
+
+

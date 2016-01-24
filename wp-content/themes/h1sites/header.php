@@ -5,11 +5,16 @@
 <meta name="viewport" content="width=device-width" />
 <title><?php wp_title( ' | ', true, 'right' ); ?></title>
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/animate.css" />
+    <script src="<?php echo get_template_directory_uri(); ?>/js/wow/wow.min.js"></script>
+    
 <?php wp_head(); ?>
 </head>
 
     <body <?php body_class(); ?> style="background:<?php global $data; echo $data['header_background'] ?>; ">
-
+<script>
+              new WOW().init();
+              </script>
     <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];

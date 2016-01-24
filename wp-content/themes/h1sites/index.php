@@ -14,7 +14,7 @@
     
 <?php query_posts('category_name=produtos index'); ?>
 <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
-<div class="boxindex">
+<div class="boxindex animated wow fadeInLeftBig">
     <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>?page_id=270"><div class="titulo-box-index"><?php the_title(); ?></div>
        <!-- imagem destacada secundária   -->
          <?php MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-image', NULL); ?></h1>
@@ -33,7 +33,7 @@
     
     <?php query_posts('category_name=a-empresa-inicial'); ?>
 <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
-<div class="boxindex">
+<div class="boxindex animated wow fadeInLeftBig">
     <h1><a href="<?php the_Permalink(); ?>"><div class="titulo-box-index"><?php the_title(); ?></div>
        <!-- imagem destacada secundária   -->
          <?php MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-image', NULL); ?></h1>
@@ -53,7 +53,7 @@
    
     <?php query_posts('category_name=assistencia-inicial'); ?>
 <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
-<div class="boxindex">
+<div class="boxindex animated wow zoomInUp">
     <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=6685"><div class="titulo-box-index"><?php the_title(); ?></div>
        <!-- imagem destacada secundária   -->
          <?php MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-image', NULL); ?></h1>
@@ -72,7 +72,7 @@
     
     <?php query_posts('category_name=garantia index'); ?>
 <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
-<div class="boxindex ultimo">
+<div class="boxindex ultimo animated wow zoomInDown">
     <h1><a href="<?php the_Permalink(); ?>"><div class="titulo-box-index"><?php the_title(); ?></div>
        <!-- imagem destacada secundária   -->
          <?php MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-image', NULL); ?></h1>
@@ -93,7 +93,7 @@
 
 
 
-<div id="article">    
+<div id="article" class="animated wow fadeInUp">    
      <?php query_posts('category_name=videos-index'); ?>
 <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
 <div class="boxindex primeiro">

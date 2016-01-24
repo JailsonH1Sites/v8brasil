@@ -93,10 +93,10 @@
 
 
 
-<div id="article" class="animated wow fadeInUp">    
+<div id="article" class="">    
      <?php query_posts('category_name=videos-index'); ?>
 <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
-<div class="boxindex primeiro">
+<div class="boxindex primeiro animated wow rollIn">
     <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>?page_id=6711"><div class="titulo-box-index"><?php the_title(); ?></div>
        <!-- imagem destacada secundária   -->
          <?php MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-image', NULL); ?></h1>
@@ -116,7 +116,7 @@
     
 <?php query_posts('category_name=facebook-index'); ?>
 <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
-<div class="boxindex direita">
+<div class="boxindex direita animated wow bounceInRight">
     <h1><div class="titulo-box-index"><?php the_title(); ?></div>
        <!-- imagem destacada secundária   -->
          <?php MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-image', NULL); ?></h1>
